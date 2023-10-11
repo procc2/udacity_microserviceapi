@@ -8,9 +8,8 @@ docker build --tag=udacityproject .
 
 # Step 2: 
 # List docker images
-docker image ls
+docker image list
 
 # Step 3: 
 # Run flask app
-docker run -p 80:80 udacityproject
-
+docker run -p 8000:80 udacityproject

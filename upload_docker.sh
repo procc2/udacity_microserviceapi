@@ -6,14 +6,14 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath=sambonuruddeen/udacityproject
+dockerpath="procc2/procc2:v3.0.0"
 
 # Step 2:  
 # Authenticate & tag
+docker login
+docker tag microproject ${dockerpath}
 echo "Docker ID and Image: $dockerpath"
-docker login -u sambonuruddeen
-docker image tag udacityproject $dockerpath
 
 # Step 3:
 # Push image to a docker repository
-docker push $dockerpath
+docker push ${dockerpath}
